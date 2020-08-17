@@ -8,7 +8,7 @@ import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 function Header() {
     return (
         <div className="header">
-            <div class="header__left">
+            <div className="header__left">
                 <Avatar 
                     className="header__avatar"
                     alt="Samiul Mushfik"
@@ -16,11 +16,11 @@ function Header() {
                     />
                 <AccessTimeIcon/>
             </div>
-            <div class="header__search">
+            <div className="header__search">
                 <SearchIcon/>
                 <input placeholder="Search"/>
             </div>
-            <div class="header__right">
+            <div className="header__right">
                 <HelpOutlineIcon/>
             </div>
         </div>
