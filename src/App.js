@@ -1,20 +1,20 @@
-import React from 'react';
-import './App.css';
-import Header from './Header';
-import Sidebar from "./Sidebar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 import Chat from "./Chat";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <Header/>
+        <Header />
         <div className="app__body">
-          <Sidebar/>
+          <Sidebar />
           <Switch>
             <Route path="/room/:roomId">
-              <Chat/>
+              <Chat />
             </Route>
             <Route path="/">
               <h1>Welcome</h1>
